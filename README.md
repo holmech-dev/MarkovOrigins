@@ -39,10 +39,12 @@ To demonstrate how letter transitions in natural language are not independent, u
 ### If building for the first time, from the build folder, execute -> cmake ..
 
 ### macOS/Linux
+```
 mkdir build
 cd build
 cmake ..
 ../build.sh
+```
 
 ## Run
 ### macOS/Linux from repo root dir:
