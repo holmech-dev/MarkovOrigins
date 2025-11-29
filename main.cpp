@@ -20,7 +20,7 @@ int main() {
     std::cout << "Markov Origins Program Entry..." << std::endl;
 
     // Read in text file
-    std::ifstream file("pushkin_eugene_onegin.txt");
+    std::ifstream file("../pushkin_eugene_onegin.txt");
     // file read error check
     if (!file.is_open()) {
         std::cerr << "Error: could not open file.\n";

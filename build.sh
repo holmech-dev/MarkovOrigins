@@ -9,4 +9,4 @@ if [ $? -ne 0 ]; then
     echo "❌ Failed to compile and link main.cpp"
     exit 1
 fi
-echo "✅ Build successful! Run with ./MarkovOrigins.exe "
+echo "✅ Build successful! Run with ./MarkovOrigins "
