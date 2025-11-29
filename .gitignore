@@ -1,4 +1,5 @@
-# ignore ALL .o files
+# ignore files
+23997-0.txt
 *.out
 *.exe
 /build/
