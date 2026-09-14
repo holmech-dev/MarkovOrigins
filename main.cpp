@@ -21,7 +21,7 @@ markovChain MC;
 int main(int argc, char* argv[]) {
     std::cout << "Markov Origins Program Entry..." << std::endl;
 
-    const std::string path = (argc > 1) ? argv[1] : "../pushkin_eugene_onegin.txt";
+    const std::string path = (argc > 1) ? argv[1] : "pushkin_eugene_onegin.txt";
     // Read in text file
     std::ifstream file(path);
     // file read error check
@@ -81,8 +81,8 @@ int main(int argc, char* argv[]) {
         int row_sum = C[i][0] + C[i][1];
         // P[i][0] = i -> 0
         P[i][0] = static_cast<double>(C[i][0]) / row_sum;
-        // P[i][0] = i -> 1
-        P[i][0] = static_cast<double>(C[i][1]) / row_sum;
+        // P[i][1] = i -> 1
+        P[i][1] = static_cast<double>(C[i][1]) / row_sum;
     }
 
     // Out the transition probabilities
