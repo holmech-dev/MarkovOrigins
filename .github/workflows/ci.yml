@@ -1,0 +1,15 @@
+name: build
+on:
+    push:
+    pull_request:
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Build
+              run: ./build.sh
+            - name: Run
+              run: ./build/MarkovOrigins pushkin_eugene_onegin.txt
