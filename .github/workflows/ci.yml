@@ -12,4 +12,4 @@ jobs:
             - name: Build
               run: ./build.sh
             - name: Run
-              run: ./build/MarkovOrigins
+              run: ./build/MarkovOrigins pushkin_eugene_onegin.txt
