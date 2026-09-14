@@ -18,11 +18,12 @@ Version    - 0
 // Namespace
 markovChain MC;
 
-int main() {
+int main(int argc, char* argv[]) {
     std::cout << "Markov Origins Program Entry..." << std::endl;
 
+    const std::string path = (argc > 1) ? argv[1] : "../pushkin_eugene_onegin.txt";
     // Read in text file
-    std::ifstream file("../pushkin_eugene_onegin.txt");
+    std::ifstream file(path);
     // file read error check
     if (!file.is_open()) {
         std::cerr << "Error: could not open file.\n";
